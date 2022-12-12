@@ -2,7 +2,7 @@
 
 1. Install Nexus
 2. [Configure admin user](#ad-2)
-3. Configure proxy repo.
+3. [Configure proxy repo.](#ad-3)
     
     *For Maven: Create setting.xml, maven should use it as mirror
     
@@ -24,6 +24,19 @@ Configuring admin user:
 
 ![Screenshot 2022-12-11 at 20 13 47](https://user-images.githubusercontent.com/114099418/207045592-f8a1419c-6f9c-47f7-a71e-5ddab32a2814.png)
 
+## Ad 3
+
+Configuring proxy repo:
+
+For Maven:
+
+![Screenshot 2022-12-12 at 19 35 34](https://user-images.githubusercontent.com/114099418/207126917-645526d1-672e-4721-94c7-2427c23f2fed.png)
+
+For Gradle:
+
+![Screenshot 2022-12-12 at 19 41 34](https://user-images.githubusercontent.com/114099418/207127974-0518a6cf-6433-429d-b5b3-d1ca8d1b6083.png)
+
+
 ## Ad 4
 
 Upload spring-petclinic Artifact to Nexus:
@@ -40,8 +53,9 @@ To be able to upload arfifact to nexus I also added this in pom.xml:
 
 Gradle:
 
-![Screenshot 2022-12-12 at 19 16 22](https://user-images.githubusercontent.com/114099418/207125517-b1af5664-b0da-46e7-a9ba-545bb4309835.png)
+Defining artifact upload as a separate Gradle task in build.gradle:
 
+![Screenshot 2022-12-12 at 19 42 38](https://user-images.githubusercontent.com/114099418/207128127-aa60fcd9-6f72-4123-90a7-194f0740a296.png)
 
 ## Ad 5
 
